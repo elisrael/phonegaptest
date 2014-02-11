@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>MatchesFashion</title>
+
+
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+         var ref = window.open("http://www.matchesfashion.com/mobile", '_self', false);
+         ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+         ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+         ref.addEventListener('exit', function() { alert(event.type); });
+    }
+
+    </script>
+	
+	
+</head>
+<body>
+test1
+<script src="phonegap.js"></script>
+<!--<script src="js/storage/memory-store.js"></script>
+<script src="js/main.js"></script>
+-->
+</body>
+</html>
